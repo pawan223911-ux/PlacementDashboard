@@ -1,0 +1,19 @@
+
+CREATE TABLE Students
+(
+    StudentID INT PRIMARY KEY IDENTITY(1,1),
+    StudentName VARCHAR(100),
+    Department VARCHAR(50),
+    CompanyName VARCHAR(100),
+    Package DECIMAL(10,2),
+    PlacementStatus VARCHAR(20)
+);
+
+INSERT INTO Students
+(StudentName, Department, CompanyName, Package, PlacementStatus)
+VALUES
+('Rahul', 'Computer Science', 'TCS', 4.5, 'Placed'),
+('Priya', 'Information Technology', 'Infosys', 5.0, 'Placed'),
+('Amit', 'Computer Science', 'Google', 12.0, 'Placed'),
+('Kumar', 'Electronics', 'Not Assigned', 0, 'Not Placed'),
+('Kiran', 'Computer Science', 'Wipro', 3.5, 'Placed');
